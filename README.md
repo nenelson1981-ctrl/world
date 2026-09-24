@@ -21,7 +21,7 @@ Download the Debian installer from this repository's Releases page, open a
 terminal in its folder, and run:
 
 ```sh
-sudo apt-get -o DPkg::Lock::Timeout=300 install ./world_1.0.9~preview1_amd64.deb
+sudo apt-get -o DPkg::Lock::Timeout=300 install ./world_1.0.9.preview1_amd64.deb
 ```
 
 Log out and back in to activate desktop permissions and start the tray.
