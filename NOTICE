@@ -1,0 +1,17 @@
+World — desktop IPv4 blocklist firewall
+
+World's project code and original globe artwork are distributed under the
+GNU General Public License, version 3 or (at your option) any later version.
+See LICENSE for the full terms. Distributed without any warranty.
+
+World was developed with AI assistance for nenelson1981-ctrl as a modern
+replacement inspired by PeerGuardian Linux. World is not an official
+PeerGuardian release and does not include the pgld daemon. No claim of
+ownership over upstream PeerGuardian code or third-party data is made.
+
+The globe artwork was generated specifically for World. The generator is
+included in tools/generate-icons.py; its output matches the original icons.
+
+Blocklist data is downloaded separately and remains subject to its providers'
+terms. World does not grant rights to those lists. System dependencies are
+installed separately and retain their own licenses.
