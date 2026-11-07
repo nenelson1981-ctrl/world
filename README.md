@@ -9,6 +9,7 @@ installation/upgrade/reboot test matrix are not yet established.
 ## Features
 
 - A globe tray indicator with manual ON/OFF control.
+- A Mint menu launcher: search **World** to reopen the tray after closing it.
 - A rate-limited blocked-activity viewer with blocklist descriptions.
 - Temporary exceptions for an IPv4 address, lasting 1 minute to 24 hours.
 - Controls to select, add, edit, and remove blocklist feeds.
@@ -21,7 +22,7 @@ Download the Debian installer from this repository's Releases page, open a
 terminal in its folder, and run:
 
 ```sh
-sudo apt-get -o DPkg::Lock::Timeout=300 install ./world_1.0.9.preview1_amd64.deb
+sudo apt-get -o DPkg::Lock::Timeout=300 install ./world_1.0.9.preview2_amd64.deb
 ```
 
 Log out and back in to activate desktop permissions and start the tray.
@@ -38,7 +39,9 @@ Existing packaged installations can upgrade without a purge.
 ## How blocking works
 
 World starts **OFF after reboot**. Turn it on from the globe menu.
-Closing the tray does not turn blocking off. World edits only its own nftables
+Closing the tray does not turn blocking off. To reopen it, search **World** in
+the Mint menu. Opening it again while the tray is running does not create a
+second indicator. World edits only its own nftables
 table; other firewall rules still apply.
 
 World filters **IPv4 input and output only**. It does not filter IPv6 or
